@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WordWall</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🔢 ทายเลขมาสิ!</h1>
+        <p>ฉันได้คิดตัวเลขไว้ระหว่าง 1 ถึง 100 คุณทายได้ไหม?</p>
+        
+        <input type="number" id="guessInput" placeholder="กรอกตัวเลขที่ทาย">
+        <button onclick="checkGuess()">ทาย!</button>
+        
+        <div id="result" class="message"></div>
+        <p id="guessesLeft">คุณมีโอกาสเหลือ: 10</p>
+        
+        <div class="history-section">
+            <h3>ประวัติการทาย:</h3>
+            <div id="history"></div> </div>
+
+        <button id="restartButton" style="display:none;" onclick="startGame()">เริ่มใหม่</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
